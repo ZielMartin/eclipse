@@ -26,6 +26,6 @@ public class Hilfskraft extends Person {
 		return s;
 	}
 	
-	//hallo
+	//doofmann
 
 }
