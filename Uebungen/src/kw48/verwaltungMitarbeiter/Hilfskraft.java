@@ -25,5 +25,7 @@ public class Hilfskraft extends Person {
 		s += String.format("\t%10b" + "\t"+ "\t%6.2f" , this.haveToPayTaxes(), this.getNetto());
 		return s;
 	}
+	
+	//hallo
 
 }
