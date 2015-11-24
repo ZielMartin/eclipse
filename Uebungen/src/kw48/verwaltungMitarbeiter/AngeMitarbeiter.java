@@ -9,3 +9,4 @@ public class AngeMitarbeiter extends Angestellte implements Mitarbeiter{
 	}
 
 }
+//test
