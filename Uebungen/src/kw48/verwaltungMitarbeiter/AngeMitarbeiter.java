@@ -1,6 +1,6 @@
 package kw48.verwaltungMitarbeiter;
 
-public class AngeMitarbeiter extends Angestellte {
+public class AngeMitarbeiter extends Angestellte implements Mitarbeiter{
 
 	public AngeMitarbeiter(String surName, String firstName, String street,
 			String city, int zip, int day, int month, int year, double salary, boolean hasKids) {

@@ -11,7 +11,7 @@ public abstract class Person {  // abstract machen
 	int zip;
 	GregorianCalendar birthDay;
 	GregorianCalendar today;
-
+	
 	public Person(String surName, String firstName, GregorianCalendar birthday) {
 		this(surName,firstName, "", "", 0,birthday.get(GregorianCalendar.DATE),birthday.get(GregorianCalendar.MONTH),birthday.get(GregorianCalendar.YEAR));
 	}

@@ -5,7 +5,7 @@ public class Angestellte extends Person{
 	private double nursingInsurance;
 	private boolean hasKids;
 	protected double salary;
-
+	
 	public Angestellte(String surName, String firstName, String street,
 			String city, int zip, int day, int month, int year, double salary, boolean hasKids) {
 		super(surName, firstName, street, city, zip, day, month, year);	
