@@ -25,6 +25,7 @@ public class Main {
 		lh.add(verbAng);
 		
 		lh.printListe();
+		System.out.println("Lol");
 	}
 
 }
