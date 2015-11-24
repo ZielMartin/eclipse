@@ -3,7 +3,7 @@ package kw48.verwaltungMitarbeiter;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-abstract public class Person {
+public class Person {
 	
 	private  static int COUNTER=0;
 	String surName, firstName;

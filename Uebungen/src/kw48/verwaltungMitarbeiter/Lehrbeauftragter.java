@@ -11,12 +11,10 @@ public class Lehrbeauftragter extends Hilfskraft {
 		this.timeRate = timeRate;
 	}
 
-	@Override
 	public boolean haveToPayTaxes() {
 		return false;
 	}
 	
-	@Override
 	public double getNetto() {
 		return timeRate * hours * FACTOR;
 	}

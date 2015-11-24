@@ -1,7 +1,7 @@
 package kw48.verwaltungMitarbeiter;
 
-
 public class Main {
+
 	public static void main(String[] args) {
 		ListeHochschule  lh = new ListeHochschule();
 		StudHilfskraft studiHiwi = new StudHilfskraft("Student", "Hiwi", "Hafenstr. 32", "Minden", 32427, 3,9, 1993,10);
@@ -13,6 +13,7 @@ public class Main {
 		VerbeamProfessor verbProf = new VerbeamProfessor("Verbeamteter", "Professor", "Am KLeinen Kamp 42", "Bad Salzuflen", 32107, 17, 10, 1975, 5000.00);
 		Lehrbeauftragter lehr = new Lehrbeauftragter("Lehrbeauftragter", "Hiwi","Hafenstr. 32", "Minden", 32427, 3,9, 1993,8, 23);
 		VerbeamMitarbeiter verbAng = new VerbeamMitarbeiter("Verbeamteter", "Angestellter", "Am KLeinen Kamp 42", "Bad Salzuflen", 32107, 17, 10, 1975, 5000.00);
+
 		
 		lh.add(studiHiwi);
 		lh.add(wissHiwi);
@@ -25,7 +26,8 @@ public class Main {
 		lh.add(verbAng);
 		
 		lh.printListe();
-		System.out.println("Lol");
+		
+		System.out.println("Counter: "+Person.getCounter());
 	}
 
 }

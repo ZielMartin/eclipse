@@ -1,6 +1,6 @@
 package kw48.verwaltungMitarbeiter;
 
-public class StudHilfskraft extends Hilfskraft implements Studierende{
+public class StudHilfskraft extends Hilfskraft {
 
 	protected double TIMERATE = 8.5;
 	
@@ -9,7 +9,6 @@ public class StudHilfskraft extends Hilfskraft implements Studierende{
 		super(surName, firstName, street, city, zip, day, month, year, hours);
 	}
 	
-	@Override
 	public double getNetto() {
 		return TIMERATE * hours * FACTOR;
 	}

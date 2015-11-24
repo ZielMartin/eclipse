@@ -1,6 +1,6 @@
 package kw48.verwaltungMitarbeiter;
 
-public class Beamte extends Person implements Lehrende{
+public class Beamte extends Person {
 
 	private double salary;
 	
@@ -19,17 +19,11 @@ public class Beamte extends Person implements Lehrende{
 		return this.salary;
 	}
 
-	@Override
 	public String toString() {
 		String s= super.toString();
 		s += String.format("\t%10b" + "\t"+ "\t%6.2f" , this.haveToPayTaxes(), this.getNetto());
 		return s;
 	}
 
-	@Override
-	public String[] teaches(){
-		String[] a = new String[10];
-		return a;
-	}
 
 }

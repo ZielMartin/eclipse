@@ -1,6 +1,6 @@
 package kw48.verwaltungMitarbeiter;
 
-public class Angestellte extends Person implements Lehrende{
+public class Angestellte extends Person{
 
 	private double nursingInsurance;
 	private boolean hasKids;
@@ -32,16 +32,10 @@ public class Angestellte extends Person implements Lehrende{
 		return retVal;
 	}
 
-	@Override
 	public String toString() {
 		String s= super.toString();
 		s += String.format("\t%10b" + "\t"+ "\t%6.2f" , this.haveToPayTaxes(), this.getNetto());
 		return s;
 	}
 
-	@Override
-	public String[] teaches(){
-		String[] a = new String[10];
-		return a;
-	}
 }
