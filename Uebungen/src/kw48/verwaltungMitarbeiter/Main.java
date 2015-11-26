@@ -28,6 +28,7 @@ public class Main {
 		lh.printListe();
 		
 		System.out.println("Counter: "+Person.getCounter());
+		System.out.println((verbAng.getClass() + "").substring(33));
 	}
 
 }
