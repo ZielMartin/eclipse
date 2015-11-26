@@ -1,7 +1,7 @@
 package kw45;
 
 public class Histogramm {
-
+//Ficken
 	public static void main(String[] args) {
 //		int[] a = { 1, 3, 4, 5, 8, 13, 0, 7, 2, 4, 18 };
 //		System.out.println(maxOfArray(a));
