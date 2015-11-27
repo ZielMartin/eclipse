@@ -7,6 +7,10 @@ public abstract class Primitive {
 		this.type = typ;
 	}
 	
+	public String getType(){
+		return type;					// gibt den Typ zurueck
+	}
+	
 	public double getCircumference(){  	//Umfang berechnen
 		return (Double) null;
 	}

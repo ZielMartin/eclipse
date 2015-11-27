@@ -16,4 +16,8 @@ public class Point {
 	public double getY(){
 		return this.y;
 	}
+	
+	public String toString(){
+		return "X: " + x + " Y: " + y;
+	}
 }

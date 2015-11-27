@@ -16,4 +16,9 @@ public class Square extends Primitive {
 	public double getSurface(){											//Flächeninhalt spezifisch fuer Square
 		return (length*length);
 	}
+	
+	@Override
+	public String toString(){
+		return super.toString() + " startpoint: " + startpoint + " length: " + length;
+	}
 }

@@ -18,4 +18,9 @@ public class Rectangle extends Primitive {
 	public double getSurface(){											//Flaecheninhalt spezifisch fuer Rectangle
 		return (length*width);
 	}
+	
+	@Override
+	public String toString(){
+		return super.toString() + " startpoint: " + startpoint + " length: " + length + " width: " + width;
+	}
 }
