@@ -1,4 +1,4 @@
-package kw48.geometry;
+package kw49.geometry;
 
 public abstract class Primitive {
 	private String type;
@@ -11,7 +11,7 @@ public abstract class Primitive {
 		return (Double) null;
 	}
 	
-	public double getSurface(){			//Fläche berechnen
+	public double getSurface(){			//Flaeche berechnen
 		return (Double) null;
 	}
 	

@@ -1,4 +1,4 @@
-package kw48.verwaltungMitarbeiter;
+package kw49.verwaltungMitarbeiter;
 
 public class SocialInsurance {
 

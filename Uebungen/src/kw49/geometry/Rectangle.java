@@ -1,4 +1,4 @@
-package kw48.geometry;
+package kw49.geometry;
 
 public class Rectangle extends Primitive {
 	private Point startpoint;
@@ -11,11 +11,11 @@ public class Rectangle extends Primitive {
 		this.width = width;
 	}
 	
-	public double getCircumference(){									//Umfang spezifisch für Elipse
+	public double getCircumference(){									//Umfang spezifisch fue Rectangle
 		return (2* (width + length));
 	}
 	
-	public double getSurface(){											//Flächeninhalt spezifisch für Elipse
+	public double getSurface(){											//Flaecheninhalt spezifisch fuer Rectangle
 		return (length*width);
 	}
 }

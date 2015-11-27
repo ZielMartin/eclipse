@@ -1,4 +1,4 @@
-package kw48.geometry;
+package kw49.geometry;
 
 public class Square extends Primitive {
 	private Point startpoint;
@@ -9,11 +9,11 @@ public class Square extends Primitive {
 		this.length = length;
 	}
 	
-	public double getCircumference(){									//Umfang spezifisch für Elipse
+	public double getCircumference(){									//Umfang spezifisch fuer Square
 		return (4 * length);
 	}
 	
-	public double getSurface(){											//Flächeninhalt spezifisch für Elipse
+	public double getSurface(){											//Flächeninhalt spezifisch fuer Square
 		return (length*length);
 	}
 }

@@ -1,4 +1,4 @@
-package kw48.verwaltungMitarbeiter;
+package kw49.verwaltungMitarbeiter;
 
 public class SpecMitarbeiter extends Angestellte implements Mitarbeiter, Lehrende, Studierende{
 

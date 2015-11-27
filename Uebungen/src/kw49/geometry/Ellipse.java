@@ -1,4 +1,4 @@
-package kw48.geometry;
+package kw49.geometry;
 
 public class Ellipse extends Primitive {
 	private Point center;
@@ -12,11 +12,11 @@ public class Ellipse extends Primitive {
 		this.lengthY = lengthY;
 	}
 	
-	public double getCircumference(){									//Umfang spezifisch für Elipse
+	public double getCircumference(){									//Umfang spezifisch fuer Ellipse
 		return (Math.PI * (lengthX + lengthY)/2);
 	}
 	
-	public double getSurface(){											//Flächeninhalt spezifisch für Elipse
+	public double getSurface(){											//Flaeheninhalt spezifisch fuer Ellipse
 		return (Math.PI * lengthX * lengthY);
 	}
 }

@@ -1,4 +1,4 @@
-package kw48.geometry;
+package kw49.geometry;
 
 public class Point {
 	private double x;

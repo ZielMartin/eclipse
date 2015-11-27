@@ -1,4 +1,4 @@
-package kw48.math;
+package kw49.math;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
