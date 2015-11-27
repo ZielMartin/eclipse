@@ -185,32 +185,36 @@ public class ListPrimitive {
 	}
 
 	public static void main(String[] args) {
-		ListPrimitive myList = new ListPrimitive();
-		myList.addCircle(new Point(1, 2.5), 5);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.addEllipse(new Point(5, 1), 1, 2.34);
-		myList.delPrim(3);
-		try {
-			myList.addObject(null);
-		} catch (WrongArgumentException e) {
-			e.printStackTrace();
-		}
-
-		// myList.savePrimitives();
-		// myList.getArrayCirc();
-		// try {
-		// myList.printFile("primitives.txt");
-		// } catch (IOException e) {
-		// e.printStackTrace();
-		// }
-		myList.printList();
-
+//		ListPrimitive myList = new ListPrimitive();
+//		myList.addCircle(new Point(1, 2.5), 5);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.addEllipse(new Point(5, 1), 1, 2.34);
+//		myList.delPrim(3);
+//		try {
+//			myList.addObject(null);
+//		} catch (WrongArgumentException e) {
+//			e.printStackTrace();
+//		}
+//
+//		// myList.savePrimitives();
+//		// myList.getArrayCirc();
+//		// try {
+//		// myList.printFile("primitives.txt");
+//		// } catch (IOException e) {
+//		// e.printStackTrace();
+//		// }
+//		myList.printList();
+		
+		ListEdgyObjects Simone = new ListEdgyObjects();
+		Simone.addCircle(new Point(5, 2), 2.2);
+		ListRoundObjects Michaela = new ListRoundObjects();
+		Michaela.addSquare(new Point(10, 10), 200);
 	}
 }
