@@ -17,5 +17,4 @@ public class Circle extends Primitive {
 	public double getSurface(){											//Flaecheninhalt spezifisch fuer Elipse
 		return (Math.PI * radius * radius);
 	}
-	//das ist ein lustiker commentaar
 }
