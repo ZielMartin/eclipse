@@ -200,7 +200,6 @@ public class ListPrimitive {
 		try {
 			myList.addObject(null);
 		} catch (WrongArgumentException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
