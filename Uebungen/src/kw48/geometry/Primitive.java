@@ -17,12 +17,8 @@ public abstract class Primitive {
 	
 	@Override
 	public String toString(){
-		return "Typ: " + type + " Umfang: " + getCircumference() + " Fläche: " + getSurface();		//Bitte nochmal untersuchen
+		return "Typ: " + type + " Umfang: " + getCircumference() + " Flaeche: " + getSurface();		//universelle toString() fuer alle 
 	}
 	
 	
-	public static void main(String[] args){
-		Ellipse Hi = new Ellipse(new Point(1, 1), 12, 3.4);
-		System.out.println(Hi);
-	}
 }
