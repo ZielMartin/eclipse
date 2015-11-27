@@ -10,11 +10,11 @@ public class Circle extends Primitive {
 		this.radius = radius;
 	}
 	
-	public double getCircumference(){									//Umfang spezifisch für Elipse
+	public double getCircumference(){									//Umfang spezifisch fuer Elipse
 		return (Math.PI * radius * 2);
 	}
 	
-	public double getSurface(){											//Flächeninhalt spezifisch für Elipse
+	public double getSurface(){											//Flaecheninhalt spezifisch fuer Elipse
 		return (Math.PI * radius * radius);
 	}
 }

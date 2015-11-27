@@ -22,7 +22,7 @@ public class ListPrimitive {
 		} while (swapped);
 	}
 	
-	public void getArraySurf(){							//sortiert das Array nach Flächeninhalt
+	public void getArraySurf(){							//sortiert das Array nach Flaecheninhalt
 		int size = list01.length;
 		Primitive swap = null;
 		boolean swapped = false;
@@ -41,6 +41,7 @@ public class ListPrimitive {
 
 	}
 	
+	//Hinzufuegen von Primitive Objekten mit ihren Konstruktoren
 	
 	public void addSquare(Point startpoint, double length){
 		list01[j] = new Square(startpoint, length);
