@@ -29,6 +29,8 @@ public class Main {
 		
 		System.out.println("Counter: "+Person.getCounter());
 		System.out.println((verbAng.getClass() + "").substring(33));
+		if(studiHiwi instanceof Mitarbeiter) System.out.println("Ja");
+		else System.out.println("Nein");
 	}
 
 }
