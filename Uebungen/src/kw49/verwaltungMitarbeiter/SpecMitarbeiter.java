@@ -1,6 +1,6 @@
 package kw49.verwaltungMitarbeiter;
 
-public class SpecMitarbeiter extends Angestellte implements Mitarbeiter, Lehrende, Studierende{
+public class SpecMitarbeiter extends Angestellte implements IMitarbeiter, ILehrende, IStudierende{
 
 	public SpecMitarbeiter(String surName, String firstName, String street, String city, int zip, int day, int month,
 			int year, double salary, boolean hasKids) {

@@ -1,6 +1,6 @@
 package kw49.verwaltungMitarbeiter;
 
-public class VerbeamProfessor extends Beamte implements Professoren{
+public class VerbeamProfessor extends Beamte implements IProfessoren{
 
 	public VerbeamProfessor(String surName, String firstName, String street,
 			String city, int zip, int day, int month, int year, double salary) {
