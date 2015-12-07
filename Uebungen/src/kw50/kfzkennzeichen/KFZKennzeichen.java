@@ -1,42 +1,52 @@
 package kw50.kfzkennzeichen;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Objects;
-import java.util.Set;
 
 public class KFZKennzeichen {
-	HashMap<String, String> kennzeichen;
+	HashMap<String, String> kennzeichen;									//HashMap, welche NUR mit 2 String gefüllt werden kann
 
-	public String sucheLandkreis(String kfzKürzel) {
-		try {
-			return (String) kennzeichen.get(kfzKürzel);
-		} catch (ClassCastException e) {
-			System.out.println("Fehler in der Hashmap");
-			return "Error";
-		}
+	public String sucheLandkreis(String kfzKürzel) {						//Methode, die den Eintrag unter dem übergebenen Key zurückgibt
+			return kennzeichen.get(kfzKürzel);
 	}
 
-	public String sucheKürzel(String landkreis) {
-		
-		for (Map.Entry<String, String> entry : kennzeichen.entrySet())
-		{
-			if(entry.getValue().equals(landkreis)){
+	public String sucheKürzel(String landkreis) {							//Methode, die den zuletzt hinzugefügten Key, welcher den übergebenen Eintrag besitzt, zurückgibt
+		for (Map.Entry<String, String> entry : kennzeichen.entrySet()) {
+			if (entry.getValue().equals(landkreis)) {
 				return entry.getKey();
 			}
 		}
 		return null;
 	}
 
+	public void print() {													//Methode um alle Schlüssel-Eintrag Kombinationen in der Map auszugeben
+		for (Map.Entry<String, String> entry : kennzeichen.entrySet()) {
+			System.out.println(entry);
+		}
+	}
+	
+	public void addLandkreis(String kürzel, String kreis){					//Methode um einen neuen Eintrag mit übergebenem Schlüssel & Eintrag hinzuzufügen
+		kennzeichen.put(kürzel, kreis);
+	}
+	
+	public void delLandkreis(String kürzel){								//Methode um den übergebenen Schlüssel und den dazugehörigen Eintrag aus der Map zu löschen
+		kennzeichen.remove(kürzel);
+	}
+	
+	public void delLandkreis(String kürzel, String landkreis){				//Lösch-Methode überladen, hier wird nur gelöscht, wenn sichergestellt ist, dass kürzel und landkreis zusammengehören
+		kennzeichen.remove(kürzel, landkreis);
+	}
+
 	public static void main(String[] args) {
 		KFZKennzeichen a = new KFZKennzeichen();
 		a.kennzeichen = new HashMap();
-		a.kennzeichen.put("MI", "Minden");
-		a.kennzeichen.put("MI2", "Minden2");
-		System.out.println(a.sucheLandkreis("MI"));
-		System.out.println(a.sucheKürzel("Minden"));
+		a.addLandkreis("MI", "Minden");
+		a.addLandkreis("MI2", "Minden2");
+		a.addLandkreis("SHG", "Schaumburg");
+		a.addLandkreis("LIP", "Lippe");
+		a.print();
+		System.out.println();
+		a.delLandkreis("LIP", "Lippe");
+		a.print();
 	}
 }
