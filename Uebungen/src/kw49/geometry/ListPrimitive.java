@@ -216,19 +216,19 @@ public class ListPrimitive {
 			e.printStackTrace();
 		}
 
-		// myList.savePrimitives();
-		// myList.getArrayCirc();
-		// try {
-		// myList.printFile("primitives.txt");
-		// } catch (IOException e) {
-		// e.printStackTrace();
-		// }
+		 myList.savePrimitives();
+		 myList.getArrayCirc();
+		 try {
+		 myList.printFile("primitives.txt");
+		 } catch (IOException e) {
+		 e.printStackTrace();
+		 }
 		myList.printList();
 		
-		ListEdgyObjects Simone = new ListEdgyObjects();
-		Simone.addCircle(new Point(5, 2), 2.2);
-		ListRoundObjects Michaela = new ListRoundObjects();
-		Michaela.addSquare(new Point(10, 10), 200);
-		System.out.println(myList.getByIndex(2));
+		//ListEdgyObjects Simone = new ListEdgyObjects();
+		//Simone.addCircle(new Point(5, 2), 2.2);
+		//ListRoundObjects Michaela = new ListRoundObjects();
+		//Michaela.addSquare(new Point(10, 10), 200);
+		//System.out.println(myList.getByIndex(2));
 	}
 }
