@@ -37,6 +37,6 @@ public class KFZKennzeichen {
 		a.kennzeichen.put("MI", "Minden");
 		a.kennzeichen.put("MI2", "Minden2");
 		System.out.println(a.sucheLandkreis("MI"));
-		System.out.println(a.sucheKürzel("Minden2"));
+		System.out.println(a.sucheKürzel("Minden"));
 	}
 }
