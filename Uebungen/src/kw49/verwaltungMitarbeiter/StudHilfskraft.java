@@ -1,6 +1,6 @@
 package kw49.verwaltungMitarbeiter;
 
-public class StudHilfskraft extends Hilfskraft implements Studierende{
+public class StudHilfskraft extends Hilfskraft implements IStudierende{
 
 	protected double TIMERATE = 8.5;
 	

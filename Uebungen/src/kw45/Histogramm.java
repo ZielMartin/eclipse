@@ -6,14 +6,17 @@ public class Histogramm {
 //		int[] a = { 1, 3, 4, 5, 8, 13, 0, 7, 2, 4, 18 };
 //		System.out.println(maxOfArray(a));
 //		printHisto(a);
-		Fraction bruch = new Fraction(12, 18);
-		Fraction bruch2 = new Fraction (17,19);
-		System.out.println(bruch.fliess(bruch));
-		bruch.redBruch(bruch);
-		bruch.kehrwert(bruch);
-		System.out.println(bruch);
-		System.out.println(bruch.addieren(bruch, bruch2));
-		System.out.println(bruch.multiplizieren(bruch, bruch2));
+//		Fraction bruch = new Fraction(12, 18);
+//		Fraction bruch2 = new Fraction (17,19);
+//		System.out.println(bruch.fliess(bruch));
+//		bruch.redBruch(bruch);
+//		bruch.kehrwert(bruch);
+//		System.out.println(bruch);
+//		System.out.println(bruch.addieren(bruch, bruch2));
+//		System.out.println(bruch.multiplizieren(bruch, bruch2));
+		Fraction Bezier = new Fraction(352, 64);
+		Bezier.redBruch(Bezier);
+		System.out.println(Bezier);
 	}
 
 	public static int maxOfArray(int[] a) {

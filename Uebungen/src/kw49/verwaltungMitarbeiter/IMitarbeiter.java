@@ -1,5 +1,5 @@
 package kw49.verwaltungMitarbeiter;
 
-public interface Mitarbeiter {
+public interface IMitarbeiter {
 
 }

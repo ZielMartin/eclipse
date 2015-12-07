@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.3">
-  <zoom_level>8</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>296</x>
-      <y>128</y>
-      <w>168</w>
-      <h>104</h>
+      <x>520</x>
+      <y>270</y>
+      <w>210</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>&lt;&lt;abstract&gt;&gt;
 Primitive
@@ -22,10 +22,10 @@ type:String
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>296</y>
-      <w>168</w>
-      <h>64</h>
+      <x>650</x>
+      <y>480</y>
+      <w>210</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Circle
 --
@@ -222,5 +222,18 @@ getY():double</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;230.0;10.0;230.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>160</x>
+      <y>30</y>
+      <w>1060</w>
+      <h>860</h>
+    </coordinates>
+    <panel_attributes>kw49.geometry
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
