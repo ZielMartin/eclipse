@@ -76,7 +76,6 @@ public class Main {
 		try {
 			listAngular.getByIndex(3);
 		} catch (IndexOutOfBoundsException e) {
-			e.printStackTrace();
 			System.out.println(
 					"listAngular ist kein Array / ArrayList, sondern ein einfaches Objekt, besitzt also nur den Index 0");
 		}

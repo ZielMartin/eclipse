@@ -1,7 +1,7 @@
 package kw50.kfzkennzeichen;
 
 import java.util.HashMap;
-import java.util.Map;
+import java.util.Map.Entry;
 
 public class KFZKennzeichen {
 	HashMap<String, String> kennzeichen;									//HashMap, welche NUR mit 2 String gefüllt werden kann
@@ -11,7 +11,7 @@ public class KFZKennzeichen {
 	}
 
 	public String sucheKürzel(String landkreis) {							//Methode, die den zuletzt hinzugefügten Key, welcher den übergebenen Eintrag besitzt, zurückgibt
-		for (Map.Entry<String, String> entry : kennzeichen.entrySet()) {
+		for (Entry<String, String> entry : kennzeichen.entrySet()) {
 			if (entry.getValue().equals(landkreis)) {
 				return entry.getKey();
 			}
@@ -20,7 +20,7 @@ public class KFZKennzeichen {
 	}
 
 	public void print() {													//Methode um alle Schlüssel-Eintrag Kombinationen in der Map auszugeben
-		for (Map.Entry<String, String> entry : kennzeichen.entrySet()) {
+		for (Entry<String, String> entry : kennzeichen.entrySet()) {
 			System.out.println(entry);
 //			Optionale Darstellung
 //			System.out.println("Kennzeichen:\t" + entry.getKey() + "\t\tLandkreis:\t" + entry.getValue());
