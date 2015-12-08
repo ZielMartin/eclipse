@@ -10,11 +10,9 @@ public class Main {
 		Square mySquare = new Square(new Point(6, 7), 3);
 		Ellipse myEllipse = new Ellipse(new Point(14, 5), 5, 23);
 		Ellipse myEllipse2 = new Ellipse(new Point(32, 42), 13, 17);
-		Ellipse nullElipse = null;
-		
+
 		ListPrimitives list = new ListPrimitives();
 		try {
-			
 			list.add(myCircle);
 			list.add(myRectangle);
 			list.add(mySquare);
@@ -49,36 +47,41 @@ public class Main {
 		// System.out.println(myRectangle);
 		// System.out.println(mySquare);
 		// System.out.println(myEllipse);
-		
-		for(int i=0; i<10; i++)	System.out.println();
-		
+
+		for (int i = 0; i < 10; i++)
+			System.out.println();
+
 		ListRoundPrimitives listRound = new ListRoundPrimitives();
-		
+
 		try {
 			listRound.add(myCircle);
 			listRound.add(myRectangle);
 		} catch (AngularArgumentException e) {
 			e.printStackTrace();
-		}catch (WrongArgumentException e) {
+		} catch (WrongArgumentException e) {
 			e.printStackTrace();
 		}
-		
+
 		ListAngularPrimitives listAngular = new ListAngularPrimitives();
-		
+
 		try {
 			listAngular.add(myRectangle);
 			listAngular.add(myCircle);
 		} catch (RoundArgumentException e) {
 			e.printStackTrace();
-		}catch (WrongArgumentException e) {
+		} catch (WrongArgumentException e) {
 			e.printStackTrace();
 		}
-		
-		
-//		listAngular.getByIndex(3);
-		
+
+		try {
+			listAngular.getByIndex(3);
+		} catch (IndexOutOfBoundsException e) {
+			e.printStackTrace();
+			System.out.println(
+					"listAngular ist kein Array / ArrayList, sondern ein einfaches Objekt, besitzt also nur den Index 0");
+		}
+
 		System.out.println("2 Exceptions ");
-		
-		
+
 	}
 }

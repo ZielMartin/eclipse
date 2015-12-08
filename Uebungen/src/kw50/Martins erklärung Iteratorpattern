@@ -1,0 +1,3 @@
+Eine Klasse die das Iterator-Pattern implementiert, lässt sich über standartisierte Methoden "verwalten", man kann zum
+Beispiel fragen ob es ein weiteres Element nach dem momentan Beobachteten gibt, man kann das nächste Element betrachten, oder auch
+das Aktuelle Element löschen
