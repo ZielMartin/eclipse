@@ -22,6 +22,8 @@ public class KFZKennzeichen {
 	public void print() {													//Methode um alle Schlüssel-Eintrag Kombinationen in der Map auszugeben
 		for (Map.Entry<String, String> entry : kennzeichen.entrySet()) {
 			System.out.println(entry);
+//			Optionale Darstellung
+//			System.out.println("Kennzeichen:\t" + entry.getKey() + "\t\tLandkreis:\t" + entry.getValue());
 		}
 	}
 	
@@ -41,7 +43,7 @@ public class KFZKennzeichen {
 		KFZKennzeichen a = new KFZKennzeichen();
 		a.kennzeichen = new HashMap();
 		a.addLandkreis("MI", "Minden");
-		a.addLandkreis("MI2", "Minden2");
+		a.addLandkreis("MI", "Minden2");
 		a.addLandkreis("SHG", "Schaumburg");
 		a.addLandkreis("LIP", "Lippe");
 		a.print();
