@@ -10,11 +10,9 @@ public class Main {
 		Square mySquare = new Square(new Point(6, 7), 3);
 		Ellipse myEllipse = new Ellipse(new Point(14, 5), 5, 23);
 		Ellipse myEllipse2 = new Ellipse(new Point(32, 42), 13, 17);
-		Ellipse nullElipse = null;
-		
+
 		ListPrimitives list = new ListPrimitives();
 		try {
-			
 			list.add(myCircle);
 			list.add(myRectangle);
 			list.add(mySquare);
@@ -75,7 +73,7 @@ public class Main {
 		}
 		
 		
-//		listAngular.getByIndex(3);
+		listAngular.getByIndex(3);				//listAngular ist kein Array / ArrayList, sondern ein einfaches Objekt, besitzt also nur den Index 0
 		
 		System.out.println("2 Exceptions ");
 		
