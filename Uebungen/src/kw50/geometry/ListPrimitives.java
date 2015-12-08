@@ -17,15 +17,8 @@ public class ListPrimitives extends ArrayList{
 		listP = new ArrayList<Primitive>();
 	}
 
-	public boolean add(Primitive p) throws WrongArgumentException {		//Vereinfach der add Methode durch eine ArrayList
-		if (p == null) {
-			throw new WrongArgumentException();
-		} else if (p instanceof Primitive){
+	public void add(Primitive p) throws WrongArgumentException {		//Vereinfach der add Methode durch eine ArrayList
 			listP.add(p);
-		} else {
-			throw new IllegalArgumentException(p + " is not a Person");
-		}
-		return true;
 	}
 
 	public void add(String line) {
