@@ -1,4 +1,4 @@
-package kw50.geometry;
+package kw01.geometry;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ListPrimitives extends ArrayList{
 	
@@ -80,11 +81,11 @@ public class ListPrimitives extends ArrayList{
 	}
 
 	public void sortCircumference() {
-		listP.sort(new SortCircumference());
+		Collections.sort(listP, new SortCircumference());
 	}
 
 	public void sortArea() {
-		listP.sort(new SortArea());
+		Collections.sort(listP, new SortArea());
 	}
 
 	public void print() {
