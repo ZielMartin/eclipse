@@ -7,7 +7,7 @@ public class Person<T> implements Comparable<T> {
 	private double telefonNummer;
 	private String name, spitzName, adresse;
 	private GregorianCalendar geburtsDatum;
-	
+
 	public Person(String name, GregorianCalendar geburtsDatum, String spitzName, String adresse, double telefonNummer) {
 		super();
 		this.name = name;
@@ -16,14 +16,19 @@ public class Person<T> implements Comparable<T> {
 		this.adresse = adresse;
 		this.telefonNummer = telefonNummer;
 	}
-	
-	
 
-	protected String getName() {
-		return name;
+	public Person(Person p) {
+		super();
+		this.name = p.name;
+		this.geburtsDatum = p.geburtsDatum;
+		this.spitzName = p.spitzName;
+		this.adresse = p.adresse;
+		this.telefonNummer = p.telefonNummer;
 	}
 
-
+	String getName() {
+		return name;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
