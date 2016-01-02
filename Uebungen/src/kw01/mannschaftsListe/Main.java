@@ -11,23 +11,46 @@ public class Main {
 		ArrayList<Person> li = new ArrayList<>();
 		TorschützenListe li2 = new TorschützenListe();
 		ArrayList<Spieler> li3 = null;
-//		li.add(new Person<>("Martin", new GregorianCalendar(1996, 06, 8), "Maddin", "Döhren", 9589777));
-//		li.add(new Person<>("Sippii", new GregorianCalendar(1912, 1, 1), "Simone", "Minden", 666676));
-//		li.add(new Person<>("Michael", new GregorianCalendar(1992, 7, 2), "Michi", "Lippe", 696969));
-//		li.add(new Person<>("Dominik", new GregorianCalendar(1991, 4, 1), "Dominique", "Porta", 7353));
-		//li.add(new Person<>(null, null, null, null, 0));
+/*
+ * Monate im GregorianCalendar beginnen mit 0!!
+ */
+		li.add(new Person<>("Martin", new GregorianCalendar(1996, 5, 8), "Maddin", "Döhren", "057059589777"));
+		li.add(new Person<>("Sippii", new GregorianCalendar(1991, 0, 1), "Simone", "Minden", "05705666676"));
+		li.add(new Person<>("Michael", new GregorianCalendar(1992, 6, 5), "Michi", "Lippe", "05705696969"));
+		li.add(new Person<>("Dominik", new GregorianCalendar(1991, 3, 1), "Dominique", "Porta", "057057353"));
+
+		// for (Person p : li) {
+		// System.out.println(p);
+		// }
+		// System.out.println("=====================");
+		// Collections.sort(li, Person.Comparators.NAME);
+		// for (Person p : li) {
+		// System.out.println(p);
+		// }
+		// System.out.println("=====================");
 		// Collections.sort(li, Person.Comparators.GEB);
+		// for (Person p : li) {
+		// System.out.println(p);
+		// }
+		// System.out.println("=====================");
+		// Collections.sort(li, Person.Comparators.SPITZ);
+		// for (Person p : li) {
+		// System.out.println(p);
+		// }
+		// System.out.println("=====================");
+
+		// // li.add(new Person<>(null, null, null, null, 0));
+		// // Collections.sort(li, Person.Comparators.GEB);
 		for (Person person : li) {
 			li2.torschützenListe.put(person, 0);
 		}
-//		li2.incTore(li.get(3));
-//		li2.incTore(li.get(3));
-//		li2.incTore(li.get(3));
-//
-//		li2.addSchütze(li.get(2), 456456);
-//		
-//
-//		li2.addSchütze(li.get(1), 12);
+		li2.incTore(li.get(3));
+		li2.incTore(li.get(3));
+		li2.incTore(li.get(3));
+
+		li2.addSchütze(li.get(2), 456456);
+
+		li2.addSchütze(li.get(1), 12);
 
 		li3 = li2.convert();
 
@@ -36,7 +59,9 @@ public class Main {
 		for (Spieler spieler : li3) {
 			System.out.println(spieler);
 		}
-		
+
+		System.out.println("============");
+
 		Collections.sort(li3, Spieler.Comparators.TORE);
 
 		for (Spieler spieler : li3) {

@@ -8,7 +8,7 @@ import kw01.mannschaftsListe.Person.Comparators;
 public class Spieler extends Person {
 	private int tore;
 	
-	public Spieler(String name, GregorianCalendar geburtsDatum, String spitzName, String adresse, double telefonNummer, int tore) {
+	public Spieler(String name, GregorianCalendar geburtsDatum, String spitzName, String adresse, String telefonNummer, int tore) {
 		super(name, geburtsDatum, spitzName, adresse, telefonNummer);
 		this.tore = tore;
 	}
@@ -18,7 +18,7 @@ public class Spieler extends Person {
 	}
 	@Override
 	public String toString() {
-		return getName() + " " + tore;
+		return super.toString() + " Tore: " + tore;
 	}
 	
 
