@@ -19,14 +19,22 @@ public class KFZKennzeichen {
 		return null;
 	}
 
-	public void print() {													//Methode um alle Schlüssel-Eintrag Kombinationen in der Map auszugeben
+	public void print() {	//Methode um alle Schlüssel-Eintrag Kombinationen in der Map auszugeben
+//		for(String key: kennzeichen.keySet()){
+//			System.out.println(kennzeichen.get(key));
+//		}
+		
 		for (Entry<String, String> entry : kennzeichen.entrySet()) {
 			System.out.println(entry);
 //			Optionale Darstellung
 //			System.out.println("Kennzeichen:\t" + entry.getKey() + "\t\tLandkreis:\t" + entry.getValue());
 		}
 	}
-	
+	/**
+	 * Kommentarbeispiel
+	 * @param kürzel
+	 * @param kreis
+	 */
 	public void addLandkreis(String kürzel, String kreis){					//Methode um einen neuen Eintrag mit übergebenem Schlüssel & Eintrag hinzuzufügen
 		kennzeichen.put(kürzel, kreis);
 	}

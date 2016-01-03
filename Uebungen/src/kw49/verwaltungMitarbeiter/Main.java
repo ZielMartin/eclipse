@@ -13,7 +13,8 @@ public class Main {
 		VerbeamProfessor verbProf = new VerbeamProfessor("Verbeamteter", "Professor", "Am KLeinen Kamp 42", "Bad Salzuflen", 32107, 17, 10, 1975, 5000.00);
 		Lehrbeauftragter lehr = new Lehrbeauftragter("Lehrbeauftragter", "Hiwi","Hafenstr. 32", "Minden", 32427, 3,9, 1993,8, 23);
 		VerbeamMitarbeiter verbAng = new VerbeamMitarbeiter("Verbeamteter", "Angestellter", "Am KLeinen Kamp 42", "Bad Salzuflen", 32107, 17, 10, 1975, 5000.00);
-
+		Person verbAng2 = new VerbeamMitarbeiter("Verbeamteter", "Angestellter", "Am KLeinen Kamp 42", "Bad Salzuflen", 32107, 17, 10, 1975, 5000.00);
+		System.out.println(verbAng2.getClass());
 		
 		lh.add(studiHiwi);
 		lh.add(wissHiwi);
