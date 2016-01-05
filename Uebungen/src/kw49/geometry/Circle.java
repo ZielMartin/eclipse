@@ -19,7 +19,7 @@ public class Circle extends Primitive {
 	}
 	
 	@Override
-	public String toString(){
+	public String toString(){   // ersetzen der tostring methode
 		return super.toString() + " center: " + center + " radius: " + radius;
 	}
 }
