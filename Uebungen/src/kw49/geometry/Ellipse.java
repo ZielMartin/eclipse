@@ -21,7 +21,7 @@ public class Ellipse extends Primitive {
 	}
 	
 	@Override
-	public String toString(){
+	public String toString(){   // ersetzen der toString method
 		return super.toString() + " center: " + center + " lengthX: " + lengthX + " lengthY: " + lengthY;
 	}
 }
