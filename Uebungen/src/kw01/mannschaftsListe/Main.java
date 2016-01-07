@@ -20,8 +20,8 @@ public class Main {
 		li.add(new Person("Michael", new GregorianCalendar(1992, 6, 5), "Michi", "Lippe", "05705696969"));
 		li.add(new Person("Dominik", new GregorianCalendar(1991, 3, 1), "Dominique", "Porta", "057057353"));
 		Gustav = new Person("Gustav", new GregorianCalendar(2015, 0, 5), "LustigerTyp", "LustigesLand", "012356");
-		li.add(null);
-		li.add(new Person(null, null, null, null, null));
+//		li.add(null);
+//		li.add(new Person<>(null, null, null, null, null));
 		
 		System.out.println("Unsortiert:");
 		for (Person p : li) {
@@ -62,6 +62,7 @@ public class Main {
 		li2.addSchütze(Gustav);
 		li2.incTore(Gustav);
 		li2.incTore(Gustav);
+		li2.delSchütze(Gustav);
 
 		li3 = li2.convert();
 

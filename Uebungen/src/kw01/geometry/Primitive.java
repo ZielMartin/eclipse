@@ -1,8 +1,11 @@
 package kw01.geometry;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Collections;
 
+=======
+>>>>>>> branch 'master' of https://github.com/ZielMartin/eclipse.git
 public abstract class Primitive implements Comparable<Primitive> {
 
 	public abstract double getCircumference();
@@ -16,11 +19,16 @@ public abstract class Primitive implements Comparable<Primitive> {
 
 	@Override
 	public int compareTo(Primitive o) {
+<<<<<<< HEAD
 		SortArea a = new SortArea();
 		SortCircumference b = new SortCircumference();
 		int a1 = a.compare(this, o);
 		int b1 = b.compare(this, o);
 		if(a1 != 0) return a1;
 		else return b1;
+=======
+		// TODO Auto-generated method stub
+		return 0;
+>>>>>>> branch 'master' of https://github.com/ZielMartin/eclipse.git
 	}
 }

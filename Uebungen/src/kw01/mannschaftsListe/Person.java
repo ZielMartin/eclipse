@@ -35,7 +35,7 @@ public class Person implements Comparable<Person> {
 	// Liefert ein true zurück, wenn das übergebene Objekt ein Person-Objekt ist
 	// UND das übergebene und die Person, dessen Methode aufgerufen wird den
 	// selben Wert bei aufruf von hashCode zurückliefern
-	@Override
+	
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Person))
 			return false;
@@ -59,7 +59,11 @@ public class Person implements Comparable<Person> {
 	// sortiert, nach dem Ergebnis, welches bei dem übergebenen Comparator ausgerechnet wird
 	@Override
 	public int compareTo(Person o) {
+<<<<<<< HEAD
 		return Comparators.NAME.compare(this, o);
+=======
+		return Comparators.NAME.compare(this, (Person) o);
+>>>>>>> branch 'master' of https://github.com/ZielMartin/eclipse.git
 	}
 	
 	// Comparators oder Vergleicher, die einen positiven/negativen Intwert oder eine Null (Intzahl) zurückliefern, um zu sortieren
