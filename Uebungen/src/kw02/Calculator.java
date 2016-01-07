@@ -13,13 +13,14 @@ public class Calculator {
 	public static void main(String[] args) {
 		//es wird ein neues Objekt namens calc vom Typ Calculator erstellt
 	Calculator calc = new Calculator();
-	// auf das Objekt calc werden verschiedene Methodenaufrufe der Unterklasse Operation
+	// durh das Objekt calc werden verschiedene Methodenaufrufe der Unterklasse Operation aufgerufen
 	System.out.println(calc.operation.PLUS(4, 7));
 	System.out.println(calc.operation.MINUS(4, 7));
 	System.out.println(calc.operation.TIMES(4, 7));
 	System.out.println(calc.operation.DIVIDE(4, 7));
 	
 	}
+	//Methoden
 private static class Operation{
 	private static int PLUS(int a,int b) {
 		return a + b;
