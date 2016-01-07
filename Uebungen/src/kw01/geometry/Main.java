@@ -11,6 +11,8 @@ public class Main {
 		Ellipse myEllipse = new Ellipse(new Point(14, 5), 5, 23);
 		Ellipse myEllipse2 = new Ellipse(new Point(32, 42), 13, 17);
 
+		System.out.println(myRectangle.compareTo(myEllipse2));
+		
 		ListPrimitives list = new ListPrimitives();
 		try {
 			list.add(myCircle);
