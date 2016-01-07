@@ -59,13 +59,8 @@ public class Person implements Comparable<Person> {
 	// sortiert, nach dem Ergebnis, welches bei dem übergebenen Comparator ausgerechnet wird
 	@Override
 	public int compareTo(Person o) {
-<<<<<<< HEAD
 		return Comparators.NAME.compare(this, o);
-=======
-		return Comparators.NAME.compare(this, (Person) o);
->>>>>>> branch 'master' of https://github.com/ZielMartin/eclipse.git
 	}
-	
 	// Comparators oder Vergleicher, die einen positiven/negativen Intwert oder eine Null (Intzahl) zurückliefern, um zu sortieren
 	// Strings zum Beispiel werden lexikographis sortiert (Albert kommt vor Zack)
 	// Vergleicht man "Albert" mit "Zack" kommt eine positive Zahl, "Zack" mit "Albert" eine negative und "Albert" mit "Albert" eine null
