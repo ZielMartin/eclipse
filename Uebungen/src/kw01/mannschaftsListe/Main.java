@@ -15,13 +15,13 @@ public class Main {
 
 		// Monate im GregorianCalendar beginnen mit 0!!
 
-		li.add(new Person<>("Martin", new GregorianCalendar(1996, 5, 8), "Maddin", "Döhren", "057059589777"));
-		li.add(new Person<>("Sippii", new GregorianCalendar(1991, 0, 1), "Simone", "Minden", "05705666676"));
-		li.add(new Person<>("Michael", new GregorianCalendar(1992, 6, 5), "Michi", "Lippe", "05705696969"));
-		li.add(new Person<>("Dominik", new GregorianCalendar(1991, 3, 1), "Dominique", "Porta", "057057353"));
-		Gustav = new Person<>("Gustav", new GregorianCalendar(2015, 0, 5), "LustigerTyp", "LustigesLand", "012356");
+		li.add(new Person("Martin", new GregorianCalendar(1996, 5, 8), "Maddin", "Döhren", "057059589777"));
+		li.add(new Person("Sippii", new GregorianCalendar(1991, 0, 1), "Simone", "Minden", "05705666676"));
+		li.add(new Person("Michael", new GregorianCalendar(1992, 6, 5), "Michi", "Lippe", "05705696969"));
+		li.add(new Person("Dominik", new GregorianCalendar(1991, 3, 1), "Dominique", "Porta", "057057353"));
+		Gustav = new Person("Gustav", new GregorianCalendar(2015, 0, 5), "LustigerTyp", "LustigesLand", "012356");
 		li.add(null);
-		li.add(new Person<>(null, null, null, null, null));
+		li.add(new Person(null, null, null, null, null));
 		
 		System.out.println("Unsortiert:");
 		for (Person p : li) {

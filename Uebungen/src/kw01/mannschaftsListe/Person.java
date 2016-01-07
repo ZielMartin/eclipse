@@ -3,7 +3,7 @@ package kw01.mannschaftsListe;
 import java.util.Comparator;
 import java.util.GregorianCalendar;
 
-public class Person<T> implements Comparable<T> {
+public class Person implements Comparable<Person> {
 	// Attributdeklarationen
 	private String name, spitzName, adresse, telefonNummer;
 	private GregorianCalendar geburtsDatum;
@@ -58,8 +58,8 @@ public class Person<T> implements Comparable<T> {
 	// Methode muss vorhanden sein, da Comparable<T> implementiert wird
 	// sortiert, nach dem Ergebnis, welches bei dem übergebenen Comparator ausgerechnet wird
 	@Override
-	public int compareTo(T o) {
-		return Comparators.NAME.compare(this, (Person<T>) o);
+	public int compareTo(Person o) {
+		return Comparators.NAME.compare(this, o);
 	}
 	
 	// Comparators oder Vergleicher, die einen positiven/negativen Intwert oder eine Null (Intzahl) zurückliefern, um zu sortieren

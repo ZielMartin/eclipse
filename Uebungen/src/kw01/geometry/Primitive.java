@@ -1,6 +1,9 @@
 package kw01.geometry;
 
-public abstract class Primitive<T> implements Comparable<T> {
+import java.util.ArrayList;
+import java.util.Collections;
+
+public abstract class Primitive implements Comparable<Primitive> {
 
 	public abstract double getCircumference();
 
@@ -12,8 +15,12 @@ public abstract class Primitive<T> implements Comparable<T> {
 	}
 
 	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Primitive o) {
+		SortArea a = new SortArea();
+		SortCircumference b = new SortCircumference();
+		int a1 = a.compare(this, o);
+		int b1 = b.compare(this, o);
+		if(a1 != 0) return a1;
+		else return b1;
 	}
 }
