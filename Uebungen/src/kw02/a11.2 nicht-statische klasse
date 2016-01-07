@@ -1,0 +1,5 @@
+Durch das entfernen des static Modifikators wird aus der statischen inneren Klasse eine Elementklasse.
+Diese dürfen keine statischen Attribute oder Methoden beinhalten und können nicht ohne ein Objekt der Oberklasse existieren,
+die Methoden können also auch nicht wie vorher über den Klassennamen aufgerufen werden (deshalb auch keine statischen Methoden möglich).
+Staatische Klassen können nur auf eigene Attribute und Methoden zugreifen, nicht auf die der äußeren Klasse.
+Elementklassen (Nicht-Staatische Klassen) teilen sich die Attribute und Methoden mit der Oberklasse
