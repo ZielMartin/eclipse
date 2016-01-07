@@ -1,4 +1,4 @@
-package kw01.geometry;
+package kw02.geometry;
 
 import java.util.ArrayList;
 public abstract class Primitive implements Comparable<Primitive> {

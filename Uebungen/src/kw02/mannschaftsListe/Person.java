@@ -1,4 +1,4 @@
-package kw01.mannschaftsListe;
+package kw02.mannschaftsListe;
 
 import java.util.Comparator;
 import java.util.GregorianCalendar;

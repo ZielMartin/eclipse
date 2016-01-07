@@ -1,9 +1,9 @@
-package kw01.mannschaftsListe;
+package kw02.mannschaftsListe;
 
 import java.util.Comparator;
 import java.util.GregorianCalendar;
 
-import kw01.mannschaftsListe.Person.Comparators;
+import kw02.mannschaftsListe.Person.Comparators;
 
 public class Spieler extends Person {
 	private int tore;

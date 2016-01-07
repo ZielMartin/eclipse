@@ -1,4 +1,4 @@
-package kw01.geometry;
+package kw02.geometry;
 
 public class Circle extends Ellipse implements IRound {
 	
