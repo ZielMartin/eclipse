@@ -1,6 +1,6 @@
 package kw01.geometry;
 
-public abstract class Primitive<T> implements Comparable<T> {
+public abstract class Primitive implements Comparable<Primitive> {
 
 	public abstract double getCircumference();
 
@@ -12,7 +12,7 @@ public abstract class Primitive<T> implements Comparable<T> {
 	}
 
 	@Override
-	public int compareTo(Object o) {
+	public int compareTo(Primitive o) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
