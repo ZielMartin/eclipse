@@ -59,7 +59,7 @@ public class Person implements Comparable<Person> {
 	// sortiert, nach dem Ergebnis, welches bei dem übergebenen Comparator ausgerechnet wird
 	@Override
 	public int compareTo(Person o) {
-		return Comparators.NAME.compare(this, (Person) o);
+		return Comparators.NAME.compare(this, o);
 	}
 	
 	// Comparators oder Vergleicher, die einen positiven/negativen Intwert oder eine Null (Intzahl) zurückliefern, um zu sortieren
