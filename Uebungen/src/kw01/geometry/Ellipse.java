@@ -39,10 +39,4 @@ public class Ellipse extends Primitive implements IRound{
 	public int getShortSemiaxis() {
 		return shortSemiaxis;
 	}
-
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }
