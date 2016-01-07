@@ -27,15 +27,25 @@ public class Person implements Comparable<Person> {
 		this.telefonNummer = p.telefonNummer;
 	}
 
-	// Getter für den Namen
+	// Getter
 	String getName() {
 		return name;
 	}
+
+	String getSpitzName() {
+		return spitzName;
+	}
+
+	GregorianCalendar getGeburtsDatum() {
+		return geburtsDatum;
+	}
+	
 
 	// Liefert ein true zurück, wenn das übergebene Objekt ein Person-Objekt ist
 	// UND das übergebene und die Person, dessen Methode aufgerufen wird den
 	// selben Wert bei aufruf von hashCode zurückliefern
 	
+
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Person))
 			return false;
@@ -58,54 +68,8 @@ public class Person implements Comparable<Person> {
 	// Methode muss vorhanden sein, da Comparable<T> implementiert wird
 	// sortiert, nach dem Ergebnis, welches bei dem übergebenen Comparator ausgerechnet wird
 	@Override
-	public int compareTo(Person o) {
-		return Comparators.NAME.compare(this, o);
-	}
-	
-	// Comparators oder Vergleicher, die einen positiven/negativen Intwert oder eine Null (Intzahl) zurückliefern, um zu sortieren
-	// Strings zum Beispiel werden lexikographis sortiert (Albert kommt vor Zack)
-	// Vergleicht man "Albert" mit "Zack" kommt eine positive Zahl, "Zack" mit "Albert" eine negative und "Albert" mit "Albert" eine null
-	public static class Comparators {
-
-		public static Comparator<Person> NAME = new Comparator<Person>() {
-			@Override
-			public int compare(Person o1, Person o2) {
-				try {
-					if(o1.name==null) return 1;
-					if(o2.name==null) return -1;
-					return o1.name.compareTo(o2.name);
-				} catch (NullPointerException e) {
-					return 0;
-				}
-			}
-		};
-
-		public static Comparator<Person> SPITZ = new Comparator<Person>() {
-			@Override
-			public int compare(Person o1, Person o2) {
-				try {
-					if(o1.spitzName==null) return 1;
-					if(o2.spitzName==null) return -1;
-					return o1.spitzName.compareTo(o2.spitzName);
-				} catch (NullPointerException e) {
-					return 0;
-				}
-			}
-		};
-
-		public static Comparator<Person> GEB = new Comparator<Person>() {
-			@Override
-			public int compare(Person o1, Person o2) {
-				try {
-					if(o1.geburtsDatum==null) return 1;
-					if(o2.geburtsDatum==null) return -1;
-					return (int) (o1.geburtsDatum.compareTo(o2.geburtsDatum));
-				} catch (NullPointerException e) {
-					return 0;
-				}
-			}
-		};
-
+	public int compareTo(Person that) {
+		return this.name.compareTo(that.name);
 	}
 
 	@Override

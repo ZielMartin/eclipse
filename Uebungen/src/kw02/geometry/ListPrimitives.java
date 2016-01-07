@@ -9,20 +9,26 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
-public class ListPrimitives extends ArrayList{
-	
+public class ListPrimitives extends ArrayList {
+
 	private ArrayList<Primitive> listP;
 
 	public ListPrimitives() {
 		listP = new ArrayList<Primitive>();
 	}
 
-	public void add(Primitive p) throws WrongArgumentException {		//Vereinfach der add Methode durch eine ArrayList
-		if(p==null){
+	public void add(Primitive p) throws WrongArgumentException { // Vereinfach
+																	// der add
+																	// Methode
+																	// durch
+																	// eine
+																	// ArrayList
+		if (p == null) {
 			System.out.println("Das primitive Objekt darf nicht null sein!");
 			System.out.println("Es wurde kein Objekt angefügt.");
-		}else{
+		} else {
 			listP.add(p);
 		}
 	}
@@ -58,8 +64,7 @@ public class ListPrimitives extends ArrayList{
 			final int longSemiaxis = Integer.parseInt(help[5]);
 			final int shortSemiaxis = Integer.parseInt(help[6]);
 			try {
-				this.add(new Ellipse(new Point(x, y), longSemiaxis,
-						shortSemiaxis));
+				this.add(new Ellipse(new Point(x, y), longSemiaxis, shortSemiaxis));
 			} catch (WrongArgumentException e) {
 				e.printStackTrace();
 			}
@@ -81,11 +86,21 @@ public class ListPrimitives extends ArrayList{
 	}
 
 	public void sortCircumference() {
-		Collections.sort(listP, new SortCircumference());
+		Collections.sort(listP, new Comparator<Primitive>() {
+			@Override
+			public int compare(Primitive o1, Primitive o2) {
+				return (int) (o1.getCircumference() - o2.getCircumference());
+			}
+		});
 	}
 
 	public void sortArea() {
-		Collections.sort(listP, new SortArea());
+		Collections.sort(listP, new Comparator<Primitive>() {
+			@Override
+			public int compare(Primitive o1, Primitive o2) {
+				return (int) (o1.getArea() - o2.getArea());
+			}
+		});
 	}
 
 	public void print() {
