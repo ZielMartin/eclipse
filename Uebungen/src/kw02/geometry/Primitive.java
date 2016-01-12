@@ -1,6 +1,7 @@
 package kw02.geometry;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 public abstract class Primitive implements Comparable<Primitive> {
 
 	public abstract double getCircumference();
@@ -13,11 +14,21 @@ public abstract class Primitive implements Comparable<Primitive> {
 	}
 
 	@Override
-	public int compareTo(Primitive o) {
-		SortArea a = new SortArea();
-		SortCircumference b = new SortCircumference();
-		int a1 = a.compare(this, o);
-		int b1 = b.compare(this, o);
+	public int compareTo(Primitive that) {
+//		SortArea a = new SortArea();
+//		SortCircumference b = new SortCircumference();
+		int a1 = new Comparator<Primitive>() {
+			@Override
+			public int compare(Primitive o1, Primitive o2) {
+				return (int) (o1.getArea() - o2.getArea());
+			}
+		}.compare(this, that);
+		int b1 = new Comparator<Primitive>() {
+			@Override
+			public int compare(Primitive o1, Primitive o2) {
+				return (int) (o1.getCircumference() - o2.getCircumference());
+			}
+		}.compare(this, that);
 		if(a1 != 0) return a1;
 		else return b1;
 	}
