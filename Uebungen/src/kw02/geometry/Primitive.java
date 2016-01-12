@@ -15,8 +15,6 @@ public abstract class Primitive implements Comparable<Primitive> {
 
 	@Override
 	public int compareTo(Primitive that) {
-//		SortArea a = new SortArea();
-//		SortCircumference b = new SortCircumference();
 		int a1 = new Comparator<Primitive>() {
 			@Override
 			public int compare(Primitive o1, Primitive o2) {
