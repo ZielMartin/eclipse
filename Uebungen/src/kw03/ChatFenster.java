@@ -12,6 +12,7 @@ import javax.swing.JTextField;
 import layout.TableLayout;
 import layout.TableLayoutConstants;
 
+@SuppressWarnings("serial")
 public class ChatFenster extends JFrame {
 	public Chat chat;
 	private JButton button = new JButton("Login");
@@ -41,8 +42,8 @@ public class ChatFenster extends JFrame {
 		});
 	}
 	
-	public void sync(String a){
-		chat.syncText(a);
+	public void sync(String text){
+		chat.setText(text);
 		textArea.setText(chat.getText());
 	}
 }

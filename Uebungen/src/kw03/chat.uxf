@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.3">
-  <zoom_level>10</zoom_level>
+  <zoom_level>13</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>130</x>
-      <y>250</y>
-      <w>190</w>
-      <h>70</h>
+      <x>325</x>
+      <y>455</y>
+      <w>247</w>
+      <h>169</h>
     </coordinates>
     <panel_attributes>Chat
 --
 -name:String
+-text:String
 --
-+send(message:String):void</panel_attributes>
++send(message:String)
++setText(text:String)
++getText():String
++toString():String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>80</y>
-      <w>230</w>
-      <h>120</h>
+      <x>299</x>
+      <y>247</y>
+      <w>299</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>Observable
 --
@@ -36,24 +40,25 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>250</y>
-      <w>200</w>
-      <h>60</h>
+      <x>741</x>
+      <y>455</y>
+      <w>338</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>ChatObserver
 --
 -memberList:ArrayList&lt;Chat&gt;
---</panel_attributes>
+--
++update(o:Observable arg:Object):void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>80</y>
-      <w>260</w>
-      <h>80</h>
+      <x>702</x>
+      <y>234</y>
+      <w>338</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 Observer
@@ -65,10 +70,10 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>150</y>
-      <w>30</w>
-      <h>120</h>
+      <x>858</x>
+      <y>325</y>
+      <w>39</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -76,21 +81,21 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>190</y>
-      <w>30</w>
-      <h>80</h>
+      <x>429</x>
+      <y>364</y>
+      <w>39</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
-      <y>250</y>
-      <w>160</w>
-      <h>30</h>
+      <x>559</x>
+      <y>455</y>
+      <w>208</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
@@ -98,12 +103,89 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>80</y>
-      <w>110</w>
-      <h>40</h>
+      <x>585</x>
+      <y>247</y>
+      <w>143</w>
+      <h>39</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>90.0;20.0;10.0;10.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>325</x>
+      <y>780</y>
+      <w>247</w>
+      <h>169</h>
+    </coordinates>
+    <panel_attributes>ChatFenster
+--
++chat:Chat
+-button:JButton
+-textArea:JTextArea
+-message:JTextField
+-size:double[][]
+--
++sync(text:String):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>806</x>
+      <y>767</y>
+      <w>130</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>JFrame
+--
+--
+....</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>559</x>
+      <y>780</y>
+      <w>273</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>858</x>
+      <y>533</y>
+      <w>39</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>611</y>
+      <w>39</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>559</x>
+      <y>533</y>
+      <w>208</w>
+      <h>273</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;140.0;10.0</additional_attributes>
   </element>
 </diagram>

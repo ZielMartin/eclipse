@@ -17,21 +17,17 @@ public class Chat extends Observable{
 		notifyObservers(message);
 	}
 	
-	public void ausgabeText(){
-		System.out.println(text);
-	}
-	
-	public void syncText(String message){
-		text = message;
-//		text += (String) message + "\n";
-	}
-
-	public String toString() {
-		return name;
+	public void setText(String text){
+		this.text = text;
 	}
 	
 	public String getText() {
 		return text;
+	}
+	
+	@Override
+	public String toString() {
+		return name;
 	}
 	
 	

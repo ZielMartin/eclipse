@@ -12,6 +12,7 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import layout.*;
 
+@SuppressWarnings("serial")
 public class ChatObserver extends JFrame implements Observer {
 	private static ArrayList<ChatFenster> memberList;
 	private String text = "";
@@ -35,7 +36,6 @@ public class ChatObserver extends JFrame implements Observer {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-//				System.out.println(userName.getText());
 				memberList.add(new ChatFenster(userName.getText(), o));
 			}
 		});
@@ -43,7 +43,6 @@ public class ChatObserver extends JFrame implements Observer {
 
 	@Override
 	public void update(Observable o, Object arg) {
-		// System.out.println((String) arg);
 		text += o.toString() + ": " + (String) arg + "\n";
 		for (ChatFenster chatFenster : memberList) {
 			chatFenster.sync(text);
@@ -53,12 +52,5 @@ public class ChatObserver extends JFrame implements Observer {
 	public static void main(String[] args) {
 		memberList = new ArrayList<ChatFenster>();
 		ChatObserver a = new ChatObserver();
-		// memberList.add(new Chat("PU55YD35TR0Y3R", a));
-		// memberList.add(new Chat("Person 2", a));
-		// memberList.get(0).send("LOL");
-		// memberList.get(0).send("LOL");
-		// memberList.get(1).send("LOL");
-		// memberList.get(0).send("LOL");
-		// memberList.get(1).ausgabeText();
 	}
 }
