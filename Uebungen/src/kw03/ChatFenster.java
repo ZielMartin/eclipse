@@ -6,8 +6,10 @@ import java.util.Observer;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
 
 import layout.TableLayout;
 import layout.TableLayoutConstants;
@@ -18,18 +20,22 @@ public class ChatFenster extends JFrame {
 	private JButton button = new JButton("Send");
 	private JTextArea textArea = new JTextArea();
 	private JTextField message = new JTextField();
-	private double size[][] = { { 10, 410, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
+	private JScrollPane scrollTextArea;
+	private double size[][] = { { 10, 390, 20, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
 
 	public ChatFenster(String name, Observer o) {
 		super("ChatSession Username: " + name);
 		this.chat = new Chat(name, o);
 		this.setSize(450, 480);
 		this.setLayout(new TableLayout(size));
+		this.setResizable(false);
+		textArea.setLineWrap(true);
+		textArea.setEditable(false);
+		scrollTextArea = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		this.add(button, "1,5");
 		this.add(message, "1,3");
-		this.add(textArea, "1,1");
+		this.add(scrollTextArea, "1,1");
 		this.setVisible(true);
-		textArea.setEditable(false);
 		this.getRootPane().setDefaultButton(button);
 		button.addActionListener(new ActionListener() {
 

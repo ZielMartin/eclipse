@@ -18,7 +18,8 @@ public class ChatObserver extends JFrame implements Observer {
 	private JButton button = new JButton("Login");
 	private JTextField userName = new JTextField();
 	private JLabel label = new JLabel("LoginName: ");
-	private double size[][] = { {10, 80, 5, 250, 5, 75,  TableLayoutConstants.FILL }, {10, 25, 25, TableLayoutConstants.FILL } };
+	private double size[][] = { { 10, 80, 5, 250, 5, 75, TableLayoutConstants.FILL },
+			{ 10, 25, 25, TableLayoutConstants.FILL } };
 
 	public ChatObserver() {
 		super("Der beste Chatraum ever");
@@ -32,10 +33,18 @@ public class ChatObserver extends JFrame implements Observer {
 		this.getRootPane().setDefaultButton(button);
 		ChatObserver o = this;
 		button.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				memberList.add(new ChatFenster(userName.getText(), o));
+				boolean changed = false;
+				for (ChatFenster chatFenster : memberList) {
+					if (userName.getText().equals(chatFenster.chat.toString()) || userName.getText().equals("Username belegt"))
+						changed = true;
+				}
+				if (!changed)
+					memberList.add(new ChatFenster(userName.getText(), o));
+				else
+					userName.setText("Username belegt");
 			}
 		});
 	}
