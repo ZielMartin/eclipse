@@ -44,6 +44,6 @@ public class ChatFenster extends JFrame {
 	
 	public void sync(String text){
 		chat.setText(text);
-		textArea.setText(chat.getText());
+		textArea.setText(text);
 	}
 }
