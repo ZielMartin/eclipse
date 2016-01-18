@@ -14,8 +14,7 @@ import layout.*;
 
 @SuppressWarnings("serial")
 public class ChatObserver extends JFrame implements Observer {
-	private static ArrayList<ChatFenster> memberList;
-	private String text = "";
+	private static ArrayList<ChatFenster> memberList = new ArrayList<ChatFenster>();;
 	private JButton button = new JButton("Login");
 	private JTextField userName = new JTextField();
 	private JLabel label = new JLabel("LoginName: ");
@@ -43,14 +42,12 @@ public class ChatObserver extends JFrame implements Observer {
 
 	@Override
 	public void update(Observable o, Object arg) {
-		text += o.toString() + ": " + (String) arg + "\n";
 		for (ChatFenster chatFenster : memberList) {
-			chatFenster.sync(text);
+			chatFenster.sync(o.toString() + ": " + (String) arg + "\n");
 		}
 	}
 
 	public static void main(String[] args) {
-		memberList = new ArrayList<ChatFenster>();
 		ChatObserver a = new ChatObserver();
 	}
 }

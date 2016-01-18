@@ -15,7 +15,7 @@ import layout.TableLayoutConstants;
 @SuppressWarnings("serial")
 public class ChatFenster extends JFrame {
 	public Chat chat;
-	private JButton button = new JButton("Login");
+	private JButton button = new JButton("Send");
 	private JTextArea textArea = new JTextArea();
 	private JTextField message = new JTextField();
 	private double size[][] = { { 10, 410, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
@@ -31,8 +31,6 @@ public class ChatFenster extends JFrame {
 		this.setVisible(true);
 		textArea.setEditable(false);
 		this.getRootPane().setDefaultButton(button);
-		chat.send(name + " has logged in");
-		sync(name + " has logged in");
 		button.addActionListener(new ActionListener() {
 
 			@Override
@@ -40,9 +38,11 @@ public class ChatFenster extends JFrame {
 				chat.send(message.getText());
 			}
 		});
+		chat.send("has logged in");
 	}
 	
 	public void sync(String text){
+		text = chat.getText() + text;
 		chat.setText(text);
 		textArea.setText(text);
 	}
