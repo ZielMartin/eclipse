@@ -15,7 +15,7 @@ import layout.TableLayoutConstants;
 @SuppressWarnings("serial")
 public class ChatFenster extends JFrame {
 	public Chat chat;
-	private JButton button = new JButton("Login");
+	private JButton button = new JButton("Send");
 	private JTextArea textArea = new JTextArea();
 	private JTextField message = new JTextField();
 	private double size[][] = { { 10, 410, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
