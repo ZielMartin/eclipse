@@ -8,6 +8,7 @@ public class Chat extends Observable{
 	private String text = "";
 	
 	public Chat(String name, Observer o){
+	
 		this.name = name;
 		addObserver(o);
 	}

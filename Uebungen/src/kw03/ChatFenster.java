@@ -42,6 +42,7 @@ public class ChatFenster extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				chat.send(message.getText());
+				message.setText("");
 			}
 		});
 		chat.send("has logged in");
