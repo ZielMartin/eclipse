@@ -21,10 +21,10 @@ public class ChatFenster extends JFrame {
 	private JTextArea textArea = new JTextArea();
 	private JTextField message = new JTextField();
 	private JScrollPane scrollTextArea;
-	private double size[][] = { { 10, 390, 20, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
+	private double size[][] = { { 10, 410, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
 
 	public ChatFenster(String name, Observer o) {
-		super("ChatSession Username: " + name);
+		super("Username: " + name);
 		this.chat = new Chat(name, o);
 		this.setSize(450, 480);
 		this.setLayout(new TableLayout(size));
