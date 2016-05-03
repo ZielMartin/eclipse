@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.3">
-  <zoom_level>13</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>325</x>
-      <y>455</y>
-      <w>247</w>
-      <h>169</h>
+      <x>384</x>
+      <y>324</y>
+      <w>228</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>Chat
 --
@@ -23,10 +23,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>299</x>
-      <y>247</y>
-      <w>299</w>
-      <h>130</h>
+      <x>360</x>
+      <y>132</y>
+      <w>276</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Observable
 --
@@ -40,10 +40,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>741</x>
-      <y>455</y>
-      <w>338</w>
-      <h>91</h>
+      <x>768</x>
+      <y>324</y>
+      <w>312</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>ChatObserver
 --
@@ -55,10 +55,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>702</x>
-      <y>234</y>
-      <w>338</w>
-      <h>104</h>
+      <x>732</x>
+      <y>120</y>
+      <w>312</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 Observer
@@ -70,21 +70,21 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>325</y>
-      <w>39</w>
-      <h>156</h>
+      <x>876</x>
+      <y>204</y>
+      <w>36</w>
+      <h>144</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>364</y>
-      <w>39</w>
-      <h>117</h>
+      <x>480</x>
+      <y>240</y>
+      <w>36</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
@@ -92,10 +92,10 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>559</x>
-      <y>455</y>
-      <w>208</w>
-      <h>39</h>
+      <x>600</x>
+      <y>324</y>
+      <w>192</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
@@ -103,10 +103,10 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
-      <y>247</y>
-      <w>143</w>
-      <h>39</h>
+      <x>624</x>
+      <y>132</y>
+      <w>132</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
@@ -114,10 +114,10 @@ Observer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>325</x>
-      <y>780</y>
-      <w>247</w>
-      <h>169</h>
+      <x>384</x>
+      <y>624</y>
+      <w>228</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>ChatFenster
 --
@@ -133,10 +133,10 @@ Observer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>806</x>
-      <y>767</y>
-      <w>130</w>
-      <h>91</h>
+      <x>828</x>
+      <y>612</y>
+      <w>120</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>JFrame
 --
@@ -147,10 +147,10 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>559</x>
-      <y>780</y>
-      <w>273</w>
-      <h>39</h>
+      <x>600</x>
+      <y>624</y>
+      <w>252</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
@@ -158,10 +158,10 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>858</x>
-      <y>533</y>
-      <w>39</w>
-      <h>260</h>
+      <x>876</x>
+      <y>396</y>
+      <w>36</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
@@ -169,21 +169,22 @@ Observer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>611</y>
-      <w>39</w>
-      <h>195</h>
+      <x>480</x>
+      <y>468</y>
+      <w>36</w>
+      <h>180</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>559</x>
-      <y>533</y>
-      <w>208</w>
-      <h>273</h>
+      <x>600</x>
+      <y>396</y>
+      <w>192</w>
+      <h>252</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;190.0;140.0;10.0</additional_attributes>

@@ -1,5 +1,6 @@
 package kw03;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class ChatObserver extends JFrame implements Observer {
 
 	public ChatObserver() {
 		super("Der beste Chatraum ever");
+		this.getContentPane().setBackground(Color.PINK);
 		this.setSize(450, 100);
 		this.setLayout(new TableLayout(size));
 		this.add(button, "5,1");

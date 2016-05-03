@@ -1,5 +1,7 @@
 package kw03;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Observer;
@@ -21,16 +23,20 @@ public class ChatFenster extends JFrame {
 	private JTextArea textArea = new JTextArea();
 	private JTextField message = new JTextField();
 	private JScrollPane scrollTextArea;
-	private double size[][] = { { 10, 390, 20, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
+	private double size[][] = { { 10, 410, TableLayoutConstants.FILL }, { 10, 335, 5, 25, 5, 50, TableLayoutConstants.FILL } };
 
 	public ChatFenster(String name, Observer o) {
-		super("ChatSession Username: " + name);
+		super("Username: " + name);
+		this.getContentPane().setBackground(Color.PINK);
 		this.chat = new Chat(name, o);
 		this.setSize(450, 480);
 		this.setLayout(new TableLayout(size));
 		this.setResizable(false);
 		textArea.setLineWrap(true);
 		textArea.setEditable(false);
+		textArea.setBackground(Color.PINK);
+		textArea.setFont(new Font("neuesFont", Font.BOLD, 14));
+		textArea.setForeground(Color.BLUE);
 		scrollTextArea = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		this.add(button, "1,5");
 		this.add(message, "1,3");
@@ -42,6 +48,7 @@ public class ChatFenster extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				chat.send(message.getText());
+				message.setText("");
 			}
 		});
 		chat.send("has logged in");
